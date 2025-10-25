@@ -103,7 +103,7 @@ const ChoosePrep = () => {
     },
   ];
   return (
-    <div className="relative min-h-screen w-full -mt-[470px]  lg:-mt-px  ">
+    <div className="relative min-h-screen w-full  -mt-[470px]  lg:-mt-px  ">
       <div className="absolute w-5  top-5">
         <svg
           width="50"

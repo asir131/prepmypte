@@ -4,7 +4,7 @@ import oval from "@public/home/oval.png";
 import dot from "@public/home/dot.png";
 const WhereverUare = () => {
   return (
-    <div className="bg-linear-to-r  min-h-[580px] from-[#5A0000] via-[#A52B1A] to-[#EF5634] text-white relative py-5 mt-30">
+    <div className="bg-linear-to-r  min-h-[580px] from-[#A52B1A]  to-[#EF5634] text-white relative py-5 mt-30">
       <div className="absolute top-0 hidden md:block h-full">
         <Image src={oval} height={100} width={133} alt="" />
       </div>

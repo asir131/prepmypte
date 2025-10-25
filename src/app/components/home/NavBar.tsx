@@ -6,10 +6,14 @@ import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { TextAlignJustify } from "lucide-react";
 import { X } from "lucide-react";
+import { useRouter } from "next/navigation"; // Import useRouter
+import Link from "next/link";
 
 const NavBar = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+
+  const router = useRouter(); // Initialize router
 
   const gradientStyle = {
     background: "linear-gradient(90deg, #EF5634, #5A0000)",
@@ -27,11 +31,21 @@ const NavBar = () => {
 
   const items = ["Home", "Pricing", "Features", "Contact Us"];
 
+  const handleNavigation = (item: string) => {
+    if (item === "Pricing") {
+      router.push("/pricing"); // Navigate to /pricing
+    }
+    if (item === "Home") {
+      router.push("/"); // Navigate to /pricing
+    }
+    // Add more conditions if needed for other items
+  };
+
   return (
     <div className="container relative lg:mx-auto flex items-center justify-between pt-3">
-      <div>
+      <Link href="/">
         <Image src={logo} width={200} height={100} alt="" />
-      </div>
+      </Link>
       <div
         onClick={() => setOpenMenu(!openMenu)}
         className="lg:hidden mr-10 cursor-pointer"
@@ -49,6 +63,7 @@ const NavBar = () => {
                 style={hoveredIndex === index ? gradientStyle : normalStyle}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
+                onClick={() => handleNavigation(item)} // Call handleNavigation
               >
                 {item}
               </span>
@@ -56,12 +71,18 @@ const NavBar = () => {
           </div>
 
           <div className="flex items-center justify-center gap-4">
-            <span className="cursor-pointer bg-gradient-to-r from-[#EF5634] to-[#5A0000] text-white px-8 py-2 rounded-lg">
+            <Link
+              href="/sign-up"
+              className="cursor-pointer bg-linear-to-r from-[#EF5634] to-[#5A0000] text-white px-8 py-2 rounded-lg"
+            >
               Sign up
-            </span>
-            <span className="flex bg-[#F3F4F6] px-8 py-2 rounded-lg items-center justify-center gap-1 cursor-pointer transition-colors duration-300 hover:text-[#EF5634]">
+            </Link>
+            <Link
+              href="/login"
+              className="flex bg-[#F3F4F6] px-8 py-2 rounded-lg items-center justify-center gap-1 cursor-pointer transition-colors duration-300 hover:text-[#EF5634]"
+            >
               Login <ArrowRight size={18} />
-            </span>
+            </Link>
           </div>
         </div>
       </div>
@@ -100,7 +121,10 @@ const NavBar = () => {
                 style={hoveredIndex === index ? gradientStyle : normalStyle}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                onClick={() => setOpenMenu(false)}
+                onClick={() => {
+                  handleNavigation(item); // Call handleNavigation
+                  setOpenMenu(false);
+                }}
               >
                 {item}
               </span>
@@ -109,15 +133,20 @@ const NavBar = () => {
 
           {/* Buttons */}
           <div className="flex flex-col gap-4 mt-8">
-            <button
+            <Link
+              href="/sign-up"
               className="cursor-pointer bg-linear-to-r from-[#EF5634] to-[#5A0000] text-white px-6 py-3 rounded-lg text-center transition-transform duration-200 hover:scale-105"
               onClick={() => setOpenMenu(false)}
             >
               Sign up
-            </button>
-            <button className="flex bg-[#F3F4F6] px-6 py-3 rounded-lg items-center justify-center gap-2 cursor-pointer transition-colors duration-300 hover:text-[#EF5634] text-center">
+            </Link>
+            <Link
+              href="/login"
+              onClick={() => setOpenMenu(false)}
+              className="flex bg-[#F3F4F6] px-6 py-3 rounded-lg items-center justify-center gap-2 cursor-pointer transition-colors duration-300 hover:text-[#EF5634] text-center"
+            >
               Login <ArrowRight size={18} />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
