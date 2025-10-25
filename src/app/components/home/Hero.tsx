@@ -4,13 +4,13 @@ import Image from "next/image";
 import girl from "@public/hero/girl.png";
 const Hero = () => {
   return (
-    <div className="mt-16">
+    <div className="-mt-[500px] lg:-mt-30 relative min-h-[100px] lg:min-h-[620px]">
       <div className="w-full relative">
-        <Image src={banner} height={80} width={1100} alt="" />
+        <Image src={banner} height={80} width={1300} alt="" />
         <div className="absolute hidden lg:block -top-12 -left-28">
-          <Image src={girl} height={100} width={500} alt="" />
+          <Image src={girl} height={100} width={600} alt="" />
         </div>
-        <div className=" absolute top-0 hidden lg:block  justify-center lg:right-15 lg:top-20">
+        <div className=" absolute top-0 hidden lg:block  justify-center lg:right-35 lg:top-30">
           <div className="font-bold text-2xl lg:text-[50px] text-center   text-white ">
             Excel in Your PTE Exam <br /> with Advanced AI Scoring
           </div>
