@@ -29,7 +29,7 @@ const NavBar = () => {
     fontWeight: "bold",
   };
 
-  const items = ["Home", "Pricing", "Features", "Contact Us"];
+  const items = ["Home", "Features", "Pricing", "Contact Us"];
 
   const handleNavigation = (item: string) => {
     if (item === "Pricing") {
@@ -37,6 +37,12 @@ const NavBar = () => {
     }
     if (item === "Home") {
       router.push("/"); // Navigate to /pricing
+    }
+    if (item === "Contact Us") {
+      router.push("/contact-us"); // Navigate to /pricing
+    }
+    if (item === "Features") {
+      router.push("/features"); // Navigate to /pricing
     }
     // Add more conditions if needed for other items
   };
