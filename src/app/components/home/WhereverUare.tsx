@@ -5,7 +5,7 @@ import dot from "@public/home/dot.png";
 const WhereverUare = () => {
   return (
     <div className="bg-linear-to-r  min-h-[580px] from-[#A52B1A]  to-[#EF5634] text-white relative py-5 mt-30">
-      <div className="absolute top-0 hidden md:block h-full">
+      <div className="absolute top-0 hidden xl:block h-full">
         <Image src={oval} height={100} width={133} alt="" />
       </div>
       <div className="absolute hidden md:block h-full top-0 right-0">
@@ -17,7 +17,7 @@ const WhereverUare = () => {
         </h1>
       </div>
       {/* icons section  */}
-      <div className=" lg:flex grid gap-10 justify-around mx-0 md:mx-10 lg:mx-80 mt-10 lg:mt-30">
+      <div className=" lg:flex grid gap-10 lg:justify-around mx-0 xl:mx-60  mt-10 lg:mt-30">
         <div className="flex flex-col items-center justify-center ">
           <div className="">
             <svg

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import logo from "@public/home/footerLogo.png";
+import Link from "next/link";
 const Footer = () => {
   return (
     <div className="bg-linear-to-r  pb-10 from-[#5A0000] via-[#A52B1A] to-[#EF5634] text-white">
@@ -59,17 +60,17 @@ const Footer = () => {
           <p>Pearson Official Tests</p>
           <p>Pearson PTE Test Centers & Fees</p>
         </div>
-        <div className="lg:mt-15 pl-10 lg:pl-0 leading-10 gap-4">
+        <div className="lg:mt-15 pl-10 lg:pl-0 leading-10  flex flex-col">
           <p className="font-bold text-[20px]">Product</p>
-          <p>Features</p>
-          <p>Pricing</p>
-          <p>Coaching</p>
+          <Link href="/features">Features</Link>
+          <Link href="/pricing">Pricing</Link>
+          <Link href="/coaching">Coaching</Link>
         </div>
-        <div className="lg:mt-15 pl-10 lg:pl-0 leading-10 gap-4">
+        <div className="lg:mt-15 pl-10 lg:pl-0 leading-10 flex flex-col">
           <p className="font-bold text-[20px]">About US</p>
-          <p>Terms of use</p>
-          <p>Privacy Policy</p>
-          <p>About us</p>
+          <Link href="/terms">Terms of use</Link>
+          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/about-us">About us</Link>
         </div>
         <div className="lg:mt-15 pl-10 lg:pl-0 leading-10 gap-4">
           <p className="font-bold text-[20px]">Support</p>
