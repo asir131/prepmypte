@@ -72,9 +72,9 @@ const Footer = () => {
           <Link href="/privacy-policy">Privacy Policy</Link>
           <Link href="/about-us">About us</Link>
         </div>
-        <div className="lg:mt-15 pl-10 lg:pl-0 leading-10 gap-4">
+        <div className="lg:mt-15 pl-10 lg:pl-0 leading-10 flex flex-col">
           <p className="font-bold text-[20px]">Support</p>
-          <p>Contact us</p>
+          <Link href="contact-us">Contact us</Link>
           <p>Chat support</p>
         </div>
       </div>
