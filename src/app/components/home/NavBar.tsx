@@ -48,7 +48,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="container relative lg:mx-auto flex items-center justify-between pt-3">
+    <div className="container relative lg:mx-auto bg-white z-10  flex items-center justify-between pt-3">
       <Link href="/">
         <Image src={logo} width={200} height={100} alt="" />
       </Link>
