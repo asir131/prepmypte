@@ -12,7 +12,7 @@ const Page: React.FC = () => {
   const [confimrPass, setConfirmPass] = useState<boolean>(false);
 
   return (
-    <div className="lg:flex justify-around md:mt-20 px-5 py-10 md:px-0 md:py-0">
+    <div className="lg:flex justify-around md:mt-20 px-5 py-10 md:px-0 md:py-0 mb-20">
       <div>
         <h1 className="font-bold text-2xl md:text-[48px]">PrepMyPTE</h1>
         <h1 className="font-bold  md:text-[30px] mt-8">
