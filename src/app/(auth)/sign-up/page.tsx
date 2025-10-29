@@ -45,7 +45,7 @@ const Page: React.FC = () => {
             </label>
             <div className="border md:w-150 my-3 rounded-xl border-[#DFE3E7] px-5 py-4">
               <input
-                className="outline-none"
+                className="outline-none w-full"
                 type="email"
                 id="email"
                 placeholder="Enter your name"
@@ -58,7 +58,7 @@ const Page: React.FC = () => {
             </label>
             <div className="border md:w-150 my-3 rounded-xl border-[#DFE3E7] px-5 py-4">
               <input
-                className="outline-none"
+                className="outline-none w-full"
                 type="email"
                 id="email"
                 placeholder="please enter your email"
@@ -72,13 +72,17 @@ const Page: React.FC = () => {
             </label>
             <div className="border flex justify-between items-center md:w-150 my-3 rounded-xl border-[#DFE3E7] px-5 py-4">
               <input
-                className="outline-none"
+                className="outline-none w-full"
                 type={eye ? "text" : "password"}
                 id="password"
                 placeholder="Password"
               />
               <div className="cursor-pointer" onClick={() => setEye(!eye)}>
-                {eye ? <EyeOff /> : <Eye />}
+                {eye ? (
+                  <EyeOff className="opacity-50" />
+                ) : (
+                  <Eye className="opacity-50" />
+                )}
               </div>
             </div>
           </div>
@@ -89,7 +93,7 @@ const Page: React.FC = () => {
             </label>
             <div className="border flex justify-between items-center md:w-150 my-3 rounded-xl border-[#DFE3E7] px-5 py-4">
               <input
-                className="outline-none"
+                className="outline-none w-full"
                 type={confimrPass ? "text" : "password"}
                 id="confirmPassword"
                 placeholder="Re-enter your password"
@@ -98,7 +102,11 @@ const Page: React.FC = () => {
                 className="cursor-pointer"
                 onClick={() => setConfirmPass(!confimrPass)}
               >
-                {confimrPass ? <EyeOff /> : <Eye />}
+                {confimrPass ? (
+                  <EyeOff className="opacity-50" />
+                ) : (
+                  <Eye className="opacity-50" />
+                )}
               </div>
             </div>
           </div>
