@@ -184,7 +184,7 @@ export default function ChoosePlan() {
                 className={`p-6 transition-all ${
                   isSelected
                     ? `${gradientClass} text-white`
-                    : "bg-[#FFF7F7] text-gray-900"
+                    : "bg-[#e0e0e0] text-gray-900"
                 }`}
               >
                 {/* Recommended Badge */}

@@ -51,7 +51,7 @@ const Pte = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2 flex flex-col justify-center">
-          <h1 className="font-bold text-xl sm:text-2xl lg:text-3xl text-center md:text-left mb-4 md:mb-6">
+          <h1 className="font-bold text-xl sm:text-2xl lg:text-3xl lg:-mt-40 md:text-left mb-4 md:mb-6">
             Who needs the <span className="text-[#DE3B40]">PTE Core?</span>
           </h1>
           <div className="text-sm sm:text-base">

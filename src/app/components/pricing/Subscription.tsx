@@ -133,7 +133,9 @@ export default function Subscription() {
           <div className="flex justify-center items-center">
             <span className="w-40 hidden md:block  border-2 mr-2"></span>
             <h1 className="text-4xl font-bold lg:text-5xl flex items-center">
-              <span className="text-[#DE3B40] text-center">Subscription</span>{" "}
+              <span className="text-[#DE3B40] text-center mr-4">
+                Subscription
+              </span>{" "}
               plans
             </h1>
             <span className="w-40 hidden md:block  border-2 ml-2"></span>
@@ -189,7 +191,7 @@ export default function Subscription() {
                 className={`p-6 transition-all ${
                   isSelected
                     ? `${gradientClass} text-white`
-                    : "bg-[#FFF7F7] text-gray-900"
+                    : "bg-[#e0e0e0] text-gray-900"
                 }`}
               >
                 {/* Recommended Badge */}

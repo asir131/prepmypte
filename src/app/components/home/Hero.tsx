@@ -6,12 +6,12 @@ const Hero = () => {
   return (
     <div className="-mt-[500px] lg:-mt-30 relative min-h-[100px] lg:min-h-[620px]">
       <div className="w-full relative">
-        <Image src={banner} height={80} width={1300} alt="" />
-        <div className="absolute hidden lg:block -top-12 -left-28">
-          <Image src={girl} height={100} width={600} alt="" />
+        <Image src={banner} height={80} width={1500} alt="" />
+        <div className="absolute hidden lg:block bottom-1 -left-5">
+          <Image src={girl} height={100} width={510} alt="" />
         </div>
         <div className=" absolute top-0 hidden lg:block  justify-center lg:right-35 lg:top-30">
-          <div className="font-bold text-2xl lg:text-[50px] text-center   text-white ">
+          <div className="font-bold text-2xl lg:text-[70px] text-center   text-white ">
             Excel in Your PTE Exam <br /> with Advanced AI Scoring
           </div>
           <div className="mt-2 lg:mt-5 ">

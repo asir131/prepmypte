@@ -83,7 +83,12 @@ const UsersSaying: React.FC = () => {
 
   return (
     <div className="min-h-[500px] lg:min-h-screen p-5 lg:p-20">
-      <div className="p-5 lg:p-20 shadow-xl mt-20 lg:py-40 lg:max-w-7xl rounded-2xl mx-auto lg:flex gap-40 items-center justify-center">
+      <div
+        style={{
+          boxShadow: "1px 1px 20px 5px rgba(0.1, 0.1, 2, 0.2)",
+        }}
+        className="p-5 lg:p-20  mt-20 lg:py-40 lg:max-w-7xl rounded-2xl mx-auto lg:flex gap-40 items-center justify-center"
+      >
         <div>
           <h1 className="font-bold text-xl lg:text-[40px] text-[#DE3B40] w-80 mb-10 lg:mb-0">
             What Our Users Are Saying
@@ -105,7 +110,7 @@ const UsersSaying: React.FC = () => {
                   : "opacity-100 translate-x-0"
               }`}
             >
-              <h1 className="italic lg:w-90 text-lg lg:text-xl leading-relaxed">
+              <h1 className="italic opacity-55 lg:w-90 text-lg lg:text-xl leading-relaxed">
                 {current.text}
               </h1>
             </div>

@@ -7,6 +7,7 @@ import WhereverUare from "./components/home/WhereverUare";
 import UsersSaying from "./components/home/UsersSaying";
 import ChoosePlan from "./components/home/ChoosePlan";
 import ExtraGuidance from "./components/home/ExtraGuidance";
+import WelcomePrepMyPTE from "./components/home/WelcomePrepMyPTE";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="w-full min-h-screen grid items-center justify-center   ">
         <Hero />
       </div>
+      <WelcomePrepMyPTE />
       <ChoosePrep />
       <PracticeOverview />
       <FAQ />

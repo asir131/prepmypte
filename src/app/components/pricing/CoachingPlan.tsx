@@ -80,12 +80,13 @@ export default function CoachingPlan() {
   return (
     <div className="min-h-screen lg:mx-20 px-6 py-12 lg:px-12">
       {/* Header Section */}
-      <div className="mb-12 flex flex-col justify-between gap-8 mb-20 ">
+      <div className="mb-12 flex flex-col justify-between gap-8 lg:mb-20 ">
         <div className="grid text-center justify-center ">
           <div className="flex justify-center items-center">
             <span className="w-40 hidden md:block border-2 mr-2"></span>
             <h1 className="text-4xl font-bold lg:text-5xl flex items-center">
-              <span className="text-[#DE3B40] text-center">Coaching</span> plans
+              <span className="text-[#DE3B40] text-center mr-4">Coaching</span>{" "}
+              plans
             </h1>
             <span className="w-40 hidden md:block border-2 ml-2"></span>
           </div>
@@ -112,7 +113,7 @@ export default function CoachingPlan() {
                 className={`p-6 transition-all ${
                   isSelected
                     ? `${gradientClass} text-white`
-                    : "bg-[#FFF7F7] text-gray-900"
+                    : "bg-[#e0e0e0] text-gray-900"
                 }`}
               >
                 {/* Recommended Badge */}
