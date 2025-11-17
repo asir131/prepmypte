@@ -116,7 +116,7 @@ export function PracticeCardsContainer({
   setActiveCard: (id: string) => void;
 }) {
   return (
-    <div className="flex gap-4 flex-wrap justify-center">
+    <div className="grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center">
       {PRACTICE_CARDS.map((card) => (
         <PracticeCard
           key={card.id}

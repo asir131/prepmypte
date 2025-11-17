@@ -119,7 +119,9 @@ const mockTestPlans: Plan[] = [
 
 export default function ChoosePlan() {
   const [activeTab, setActiveTab] = useState<TabType>("subscription");
-  const [selectedPlan, setSelectedPlan] = useState<PlanType>("pro");
+  
+  // Remove selectedPlan state and make it a constant
+  const selectedPlan: PlanType = "pro"; // Always "pro" by default
 
   const plans =
     activeTab === "subscription" ? subscriptionPlans : mockTestPlans;
@@ -142,10 +144,7 @@ export default function ChoosePlan() {
 
         <div className="flex gap-2 justify-between rounded-full border border-gray-300 bg-white p-1">
           <button
-            onClick={() => {
-              setActiveTab("subscription");
-              setSelectedPlan("pro");
-            }}
+            onClick={() => setActiveTab("subscription")}
             className={`rounded-full px-6 py-2 font-semibold transition-all ${
               activeTab === "subscription"
                 ? `${gradientClass} text-white`
@@ -155,10 +154,7 @@ export default function ChoosePlan() {
             Subscription
           </button>
           <button
-            onClick={() => {
-              setActiveTab("mocktest");
-              setSelectedPlan("pro");
-            }}
+            onClick={() => setActiveTab("mocktest")}
             className={`rounded-full px-6 py-2 font-semibold transition-all ${
               activeTab === "mocktest"
                 ? `${gradientClass} text-white`
@@ -176,8 +172,8 @@ export default function ChoosePlan() {
           return (
             <div
               key={plan.id}
-              onClick={() => setSelectedPlan(plan.id)}
-              className="relative cursor-pointer overflow-hidden rounded-2xl border border-gray-200 transition-all"
+              // Remove onClick handler to prevent selection changes
+              className="relative overflow-hidden rounded-2xl border border-gray-200 transition-all"
             >
               {/* Header Section with gradient when selected */}
               <div

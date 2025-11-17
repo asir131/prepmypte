@@ -103,7 +103,7 @@ const ChoosePrep = () => {
     },
   ];
   return (
-    <div className="relative w-full  -mt-[470px]  lg:-mt-px  ">
+    <div className="relative  w-full  -mt-[470px]  lg:-mt-px  ">
       <div className="absolute w-5  top-5">
         <svg
           width="50"
@@ -194,7 +194,7 @@ const ChoosePrep = () => {
           Why Choose <span className="text-[#DE3B40]">PrepMyPTE</span> ?
         </h1>
 
-        <div className="mx-auto lg:max-w-7xl mt-30 ">
+        <div className="mx-5 lg:mx-auto lg:max-w-7xl mt-30 ">
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
             {features.map((feature, index) => (

@@ -119,26 +119,26 @@ const mockTestPlans: Plan[] = [
 
 export default function Subscription() {
   const [activeTab, setActiveTab] = useState<TabType>("subscription");
-  const [selectedPlan, setSelectedPlan] = useState<PlanType>("pro");
-
-  const plans =
-    activeTab === "subscription" ? subscriptionPlans : mockTestPlans;
-  const gradientClass = "bg-gradient-to-r from-[#A52B1A]  to-[#EF5634]";
+  
+  // Remove selectedPlan state since we don't want users to change selection
+  const selectedPlan: PlanType = "pro"; // Always "pro" by default
+  
+  const plans = activeTab === "subscription" ? subscriptionPlans : mockTestPlans;
+  const gradientClass = "bg-gradient-to-r from-[#A52B1A] to-[#EF5634]";
 
   return (
     <div className="min-h-screen lg:mx-20 px-6 py-12 lg:px-12">
       {/* Header Section */}
-      <div className="mb-12 flex flex-col justify-between gap-8 ">
-        <div className="grid text-center  justify-center ">
+      <div className="mb-12 flex flex-col justify-between gap-8">
+        <div className="grid text-center justify-center">
           <div className="flex justify-center items-center">
-            <span className="w-40 hidden md:block  border-2 mr-2"></span>
+            <span className="w-40 hidden md:block border-2 mr-2"></span>
             <h1 className="text-4xl font-bold lg:text-5xl flex items-center">
               <span className="text-[#DE3B40] text-center mr-4">
                 Subscription
-              </span>{" "}
-              plans
+              </span> plans
             </h1>
-            <span className="w-40 hidden md:block  border-2 ml-2"></span>
+            <span className="w-40 hidden md:block border-2 ml-2"></span>
           </div>
           <p className="mt-4 text-lg text-gray-600 lg:max-w-2xl">
             Find the perfect plan for your{" "}
@@ -148,12 +148,9 @@ export default function Subscription() {
         </div>
       </div>
       <div className="grid mb-15 justify-end">
-        <div className="flex w-80 gap-2  justify-between rounded-full border border-gray-300 bg-white p-1">
+        <div className="flex w-80 gap-2 justify-between rounded-full border border-gray-300 bg-white p-1">
           <button
-            onClick={() => {
-              setActiveTab("subscription");
-              setSelectedPlan("pro");
-            }}
+            onClick={() => setActiveTab("subscription")}
             className={`rounded-full px-6 py-2 font-semibold transition-all ${
               activeTab === "subscription"
                 ? `${gradientClass} text-white`
@@ -163,10 +160,7 @@ export default function Subscription() {
             Subscription
           </button>
           <button
-            onClick={() => {
-              setActiveTab("mocktest");
-              setSelectedPlan("pro");
-            }}
+            onClick={() => setActiveTab("mocktest")}
             className={`rounded-full px-6 py-2 font-semibold transition-all ${
               activeTab === "mocktest"
                 ? `${gradientClass} text-white`
@@ -183,8 +177,8 @@ export default function Subscription() {
           return (
             <div
               key={plan.id}
-              onClick={() => setSelectedPlan(plan.id)}
-              className="relative cursor-pointer overflow-hidden rounded-2xl border border-gray-200 transition-all"
+              // Remove onClick handler to prevent selection changes
+              className="relative overflow-hidden rounded-2xl border border-gray-200 transition-all"
             >
               {/* Header Section with gradient when selected */}
               <div
@@ -197,7 +191,7 @@ export default function Subscription() {
                 {/* Recommended Badge */}
                 {plan.recommended && (
                   <div
-                    className={`absolute  right-6 rounded-full px-4 py-1 text-sm font-semibold ${
+                    className={`absolute right-6 rounded-full px-4 py-1 text-sm font-semibold ${
                       isSelected
                         ? "bg-white text-[#EF5634]"
                         : "bg-white text-gray-700"
@@ -221,7 +215,7 @@ export default function Subscription() {
               {/* Body Section - always light background */}
               <div className="bg-white p-8">
                 {/* Price */}
-                <div className="text-5xl font-bold text-center  text-gray-900">
+                <div className="text-5xl font-bold text-center text-gray-900">
                   {plan.price}
                 </div>
 

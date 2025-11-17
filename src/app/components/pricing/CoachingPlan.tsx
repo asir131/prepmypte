@@ -72,16 +72,17 @@ const subscriptionPlans: Plan[] = [
 ];
 
 export default function CoachingPlan() {
-  const [selectedPlan, setSelectedPlan] = useState<PlanType>("Premium");
+  // Remove state and make it a constant - always "Premium" by default
+  const selectedPlan: PlanType = "Premium";
 
   const plans = subscriptionPlans;
-  const gradientClass = "bg-gradient-to-r from-[#A52B1A]  to-[#EF5634]";
+  const gradientClass = "bg-gradient-to-r from-[#A52B1A] to-[#EF5634]";
 
   return (
     <div className="min-h-screen lg:mx-20 px-6 py-12 lg:px-12">
       {/* Header Section */}
-      <div className="mb-12 flex flex-col justify-between gap-8 lg:mb-20 ">
-        <div className="grid text-center justify-center ">
+      <div className="mb-12 flex flex-col justify-between gap-8 lg:mb-20">
+        <div className="grid text-center justify-center">
           <div className="flex justify-center items-center">
             <span className="w-40 hidden md:block border-2 mr-2"></span>
             <h1 className="text-4xl font-bold lg:text-5xl flex items-center">
@@ -91,7 +92,7 @@ export default function CoachingPlan() {
             <span className="w-40 hidden md:block border-2 ml-2"></span>
           </div>
           <p className="mt-4 text-lg text-gray-600 lg:max-w-4xl">
-            Take your<span className="font-bold">PTE Core</span> Core
+            Take your <span className="font-bold">PTE Core</span> Core
             preparation to the next level with personalized coaching. Work
             directly with expert trainers who analyze your performance, guide
             your practice, and help you reach your target score faster.
@@ -105,8 +106,8 @@ export default function CoachingPlan() {
           return (
             <div
               key={plan.id}
-              onClick={() => setSelectedPlan(plan.id)}
-              className="relative cursor-pointer overflow-hidden rounded-2xl border border-gray-200 transition-all"
+              // Remove onClick handler to prevent selection changes
+              className="relative overflow-hidden rounded-2xl border border-gray-200 transition-all"
             >
               {/* Header Section with gradient when selected */}
               <div

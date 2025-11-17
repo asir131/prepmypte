@@ -8,6 +8,7 @@ import UsersSaying from "./components/home/UsersSaying";
 import ChoosePlan from "./components/home/ChoosePlan";
 import ExtraGuidance from "./components/home/ExtraGuidance";
 import WelcomePrepMyPTE from "./components/home/WelcomePrepMyPTE";
+import CoachingPlan from "./components/pricing/CoachingPlan";
 
 export default function Home() {
   return (
@@ -16,12 +17,15 @@ export default function Home() {
         <Hero />
       </div>
       <WelcomePrepMyPTE />
-      <ChoosePrep />
+      <div className="md:mb-30 md:mt-45 xl:mb-30 xl:mt-50">
+        <ChoosePrep />
+      </div>
       <PracticeOverview />
       <FAQ />
       <WhereverUare />
       <UsersSaying />
       <ChoosePlan />
+      <CoachingPlan/>
       <ExtraGuidance />
     </div>
   );
