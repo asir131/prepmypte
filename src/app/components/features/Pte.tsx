@@ -9,10 +9,10 @@ const Pte = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full">
       {/* Section 1: What is PTE Core */}
-      <div className="w-full max-w-7xl flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-40 p-5 md:p-8 items-center">
+      <div className="w-full max-w-7xl xl:mt-20 xl:mb-10 flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-40 p-5 md:p-8 items-center">
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="w-full max-w-md  rounded-2xl flex items-center justify-center">
-            <Image src={one} width={400} height={100} alt="" />
+            <Image src={one} width={330} height={100} alt="" />
           </div>
         </div>
         <div className="w-full md:w-1/2 flex flex-col justify-center">
@@ -71,13 +71,13 @@ const Pte = () => {
       </div>
 
       {/* Section 3: Why choose PTE Core */}
-      <div className="w-full max-w-7xl flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-40 p-5 md:p-8 items-center mt-8 md:mt-12">
+      <div className="w-full max-w-7xl flex flex-col xl:mt-20 md:flex-row gap-8 md:gap-16 lg:gap-40 p-5 md:p-8 items-center mt-8 md:mt-12">
         <div className="w-full md:w-1/2 flex justify-center">
-          <div className="w-full max-w-md aspect-square bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl flex items-center justify-center">
-            <Image src={three} width={500} height={100} alt="" />
+          <div className="w-full max-w-md xl:-mt-25 aspect-square  rounded-2xl flex items-center justify-center">
+            <Image src={three} width={400} height={100} alt="" />
           </div>
         </div>
-        <div className="w-full md:w-1/2 flex flex-col justify-center">
+        <div className="w-full md:w-1/2 flex flex-col x justify-center">
           <h1 className="font-bold text-xl sm:text-2xl lg:text-3xl text-center md:text-left mb-4 md:mb-6">
             Why choose <span className="text-[#DE3B40]">PTE Core?</span>
           </h1>
@@ -91,7 +91,7 @@ const Pte = () => {
                     viewBox="0 0 28 28"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="flex-shrink-0"
+                    className="shrink-0"
                   >
                     <path
                       d="M22 3L6 3C4.34315 3 3 4.34315 3 6L3 22C3 23.6569 4.34315 25 6 25L22 25C23.6569 25 25 23.6569 25 22L25 6C25 4.34315 23.6569 3 22 3ZM20.707 9.707L11.707 18.707C11.3165 19.0974 10.6835 19.0974 10.293 18.707L7.293 15.707C6.91403 15.3146 6.91945 14.6909 7.30518 14.3052C7.69092 13.9194 8.31462 13.914 8.707 14.293L11 16.586L19.293 8.293C19.5441 8.03304 19.9159 7.92879 20.2655 8.0203C20.6151 8.11182 20.8882 8.38486 20.9797 8.73449C21.0712 9.08412 20.967 9.45593 20.707 9.707Z"
@@ -183,7 +183,7 @@ const Pte = () => {
       </div>
 
       {/* PTE Test Format Section */}
-      <div className="w-full mt-12 md:mt-16 flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 mb-10">
+      <div className="w-full mt-12 xl:mt-40 xl:mb-40 md:mt-16 flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 mb-10">
         <h1 className="font-bold text-xl sm:text-2xl md:text-3xl text-center">
           PTE Core <span className="text-[#DE3B40]">Test Format</span>
         </h1>
