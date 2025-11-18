@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import guid from "@public/home/extraGuide.png";
+import Link from "next/link";
 
 const ExtraGuidance = () => {
   return (
-    <div className=" flex items-center justify-center xl:-mt-24 lg:p-30 p-6">
+    <div className=" flex items-center justify-center xl:mb-10 xl:-mt-10 lg:p-30 p-6">
       <div className="lg:flex gap-8 lg:gap-30 max-w-6xl items-center justify-between bg-linear-to-r from-[#A52B1A] to-[#EF5634] text-white rounded-2xl w-full">
         {/* Text Content */}
         <div className="lg:pl-6 p-6 lg:p-0 lg:w-1/2">
@@ -15,9 +16,12 @@ const ExtraGuidance = () => {
             Join other PTE candidates improving their scores through expert
             coaching, structured lessons, and personalized feedback.
           </p>
-          <button className="bg-white -mt-10 cursor-pointer px-5 py-3 rounded-lg text-black text-sm sm:text-base hover:bg-gray-100 transition-colors">
+          <Link
+            href="/sign-up"
+            className="bg-white -mt-10 cursor-pointer px-5 py-3 rounded-lg text-black text-sm sm:text-base hover:bg-gray-100 transition-colors"
+          >
             Sign up
-          </button>
+          </Link>
         </div>
 
         {/* Image */}

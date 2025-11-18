@@ -4,7 +4,7 @@ import img from "@public/hero/prep.png";
 
 const WelcomePrepMyPTE = () => {
   return (
-    <div className="grid gap-10 -mt-[450px] lg:-mt-px  lg:flex items-center justify-center lg:gap-40 mb-150 lg:mb-30">
+    <div className="grid gap-10 -mt-[380px] lg:-mt-px  lg:flex items-center justify-center lg:gap-40 mb-150 lg:mb-60">
       <div className="px-5">
         <h1 className="font-bold text-2xl lg:text-[48px] mb-5">
           Welcome to <span className="text-[#DE3B40]">Prep My PTE</span>
