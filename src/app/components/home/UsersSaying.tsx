@@ -82,12 +82,12 @@ const UsersSaying: React.FC = () => {
   };
 
   return (
-    <div className="min-h-[500px] lg:min-h-screen p-5 lg:p-20">
+    <div className=" p-5 lg:p-20">
       <div
         style={{
           boxShadow: "1px 1px 20px 5px rgba(0.1, 0.1, 2, 0.2)",
         }}
-        className="p-5 lg:p-20  mt-20 lg:py-40 lg:max-w-7xl rounded-2xl mx-auto lg:flex gap-40 items-center justify-center"
+        className="p-5 lg:p-20 mt-22 md:mt-12 lg:py-40 lg:max-w-7xl rounded-2xl mx-auto lg:flex gap-40 items-center justify-center"
       >
         <div>
           <h1 className="font-bold text-xl lg:text-[40px] text-[#DE3B40] w-80 mb-10 lg:mb-0">
@@ -122,13 +122,13 @@ const UsersSaying: React.FC = () => {
                 isSliding ? "opacity-0" : "opacity-100"
               }`}
             >
-              <Image
+              {/* <Image
                 src={user || "/placeholder.svg"}
                 height={50}
                 width={50}
                 alt={current.name}
                 className="rounded-full"
-              />
+              /> */}
               <h1 className="font-bold text-[20px]">
                 {current.name}, {current.location}
               </h1>

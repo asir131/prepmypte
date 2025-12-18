@@ -2,9 +2,10 @@ import Image from "next/image";
 import React from "react";
 import oval from "@public/home/oval.png";
 import dot from "@public/home/dot.png";
+import Link from "next/link";
 const WhereverUare = () => {
   return (
-    <div className="bg-linear-to-r  min-h-[580px] from-[#A52B1A]  to-[#EF5634] text-white relative py-5 mt-30">
+    <div className="bg-linear-to-r  min-h-[580px] from-[#A52B1A]  to-[#EF5634] text-white relative py-5 mt-25">
       <div className="absolute top-0 hidden xl:block h-full">
         <Image src={oval} height={100} width={133} alt="" />
       </div>
@@ -123,9 +124,11 @@ const WhereverUare = () => {
         </div>
       </div>
       <div className="flex justify-center mt-10 ">
-        <button className="bg-white w-30 px-5 py-3 rounded-lg text-center  text-black">
-          Contact US
-        </button>
+        <Link href={"/contact-us"}>
+          <button className="bg-white w-30 px-5 py-3 rounded-lg text-center  text-black">
+            Contact US
+          </button>
+        </Link>
       </div>
     </div>
   );

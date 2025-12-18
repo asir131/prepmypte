@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import woman from "@public/faq/woman.png";
+import Link from "next/link";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -39,9 +40,9 @@ const FAQ = () => {
   };
 
   return (
-    <div className="mt-10 md:mt-30 grid justify-center px-4">
+    <div className="mt-14 md:mt-28 grid justify-center px-4">
       <div className="text-center">
-        <h1 className="font-bold text-5xl">
+        <h1 className="font-bold text-4xl md:text-5xl">
           Frequently Asked <span className="text-[#D01127]">Questions</span>{" "}
         </h1>
         <p className="my-5">Quick answers for a smarter PTE journey</p>
@@ -87,14 +88,16 @@ const FAQ = () => {
       </div>
 
       <div className="flex justify-center mt-8">
-        <span
-          className="bg-[#D01127] text-center text-xl px-8 py-2 my-5 text-white rounded-lg cursor-pointer hover:bg-[#b80f22] transition-colors duration-200 inline-block"
-          style={{
-            boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, 0.2)",
-          }}
-        >
-          All about the PTE Core Exam
-        </span>
+        <Link href={"/features"}>
+          <span
+            className="bg-[#D01127] text-center text-xl px-8 py-2 my-5 text-white rounded-lg cursor-pointer hover:bg-[#b80f22] transition-colors duration-200 inline-block"
+            style={{
+              boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, 0.2)",
+            }}
+          >
+            All about the PTE Core Exam
+          </span>
+        </Link>
       </div>
 
       <style jsx>{`

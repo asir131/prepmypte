@@ -79,7 +79,7 @@ export default function CoachingPlan() {
   const gradientClass = "bg-gradient-to-r from-[#A52B1A] to-[#EF5634]";
 
   return (
-    <div className="min-h-screen lg:mx-20 px-6 py-12 lg:px-12">
+    <div className="min-h-screen lg:mx-20 px-6 py-5 md:py-10 lg:px-12">
       {/* Header Section */}
       <div className="mb-12 flex flex-col justify-between gap-8 lg:mb-20">
         <div className="grid text-center justify-center">

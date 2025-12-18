@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const JourneyStarts = () => {
@@ -99,9 +100,11 @@ const JourneyStarts = () => {
       </div>
 
       <div>
-        <button className="bg-[#DE3B40] text-white px-16 py-2 rounded-full mt-10 mb-10">
-          Sign Up
-        </button>
+        <Link href={"/sign-up"}>
+          <button className="bg-[#DE3B40] text-white px-16 py-2 rounded-full mt-10 mb-10">
+            Sign Up
+          </button>
+        </Link>
       </div>
     </div>
   );

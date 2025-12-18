@@ -4,12 +4,12 @@ import img from "@public/hero/prep.png";
 
 const WelcomePrepMyPTE = () => {
   return (
-    <div className="grid gap-10 -mt-[380px] lg:-mt-px  lg:flex items-center justify-center lg:gap-40 mb-150 lg:mb-60">
-      <div className="px-5">
-        <h1 className="font-bold text-2xl lg:text-[48px] mb-5">
+    <div className="grid gap-10 -mt-[480px] lg:-mt-px  lg:flex items-center justify-center lg:gap-40 mb-140 md:mb-150 lg:mb-0">
+      <div className="px-10">
+        <h1 className="font-bold text-2xl mt-7 md:mt-0 lg:text-[48px] mb-5">
           Welcome to <span className="text-[#DE3B40]">Prep My PTE</span>
         </h1>
-        <p className="lg:w-100">
+        <p className="lg:w-100 text-sm md:text-lg text-justify md:text-start mt-2 md:mt-0">
           Get ready to achieve your dream PTE Core score for Canadian
           immigration. PrepMyPTE offers AI-powered practice tests, instant
           scoring, and expert feedback to help you improve faster. Boost your

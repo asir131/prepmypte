@@ -17,7 +17,7 @@ export default function Home() {
         <Hero />
       </div>
       <WelcomePrepMyPTE />
-      <div className="md:mb-30 md:mt-45 xl:mb-30 xl:mt-50">
+      <div className="md:mb-30  md:mt-45 xl:mb-15 xl:mt-35">
         <ChoosePrep />
       </div>
       <PracticeOverview />

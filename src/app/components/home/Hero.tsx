@@ -5,7 +5,7 @@ import girl from "@public/hero/girl.png";
 import Link from "next/link";
 const Hero = () => {
   return (
-    <div className="-mt-[500px] lg:-mt-30 relative min-h-[100px] lg:min-h-[620px]">
+    <div className="-mt-[500px] lg:-mt-30  relative min-h-[100px] lg:min-h-[620px]">
       <div className="w-full relative">
         <Image  src={banner} height={80} width={1500} alt="" />
         <div className="absolute hidden lg:block bottom-1 -left-5">
@@ -40,13 +40,13 @@ const Hero = () => {
               Boost your performance with real-time feedback and realistic{" "}
               <br /> mock tests, and maximize your results.
             </p>
-            <div className="flex gap-5  items-center justify-center mt-2 lg:mt-8">
-              <button className="bg-white cursor-pointer px-2  lg:px-5 lg:py-3 rounded-md">
+            <div className="flex gap-5  items-center justify-center mt-2 lg:mt-8 ">
+              <Link href="/pricing" className="bg-white cursor-pointer px-2  lg:px-5 lg:py-3 rounded-md">
                 Get Started Today
-              </button>
-              <button className="border cursor-pointer border-white text-white px-2  lg:px-5 lg:py-3 rounded-md">
+              </Link>
+              <Link href="/features" className="border cursor-pointer border-white text-white px-2  lg:px-5 lg:py-3 rounded-md">
                 Explore Features
-              </button>
+              </Link >
             </div>
           </div>
         </div>
@@ -56,3 +56,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
