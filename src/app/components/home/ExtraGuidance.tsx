@@ -18,8 +18,8 @@ const ExtraGuidance = () => {
           </p>
           <Link
             href="/sign-up"
-            className="bg-white -mt-10 cursor-pointer px-5 py-3 rounded-lg text-black text-sm sm:text-base hover:bg-gray-100 transition-colors"
-          >
+            className="cursor-pointer px-16 py-3 rounded-lg text-white bg-gradient-to-b from-[#EF5634] to-[#5A0000] hover:from-[#5A0000] hover:to-[#5A0000]  text-center transition-all duration-500 ease-in-out hover:text-white inline-block">
+        
             Sign up
           </Link>
         </div>

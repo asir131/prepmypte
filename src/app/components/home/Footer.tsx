@@ -4,7 +4,7 @@ import logo from "@public/home/footerLogo.png";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <div className="bg-linear-to-r pb-10 from-[#5A0000] via-[#A52B1A] to-[#EF5634] text-white">
+    <div className="bg-linear-to-r mt-5 pb-10 from-[#5A0000] via-[#A52B1A] to-[#EF5634] text-white">
       <div className="md:flex justify-around py-10">
         <div>
           <Image className="" src={logo} height={100} width={350} alt="" />

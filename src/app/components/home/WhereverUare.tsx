@@ -125,7 +125,7 @@ const WhereverUare = () => {
       </div>
       <div className="flex justify-center mt-10 ">
         <Link href={"/contact-us"}>
-          <button className="bg-white w-30 px-5 py-3 rounded-lg text-center  text-black">
+          <button className="cursor-pointer px-16 py-3 rounded-lg text-white bg-gradient-to-b from-[#EF5634] to-[#5A0000] hover:from-[#5A0000] hover:to-[#5A0000]  text-center transition-all duration-500 ease-in-out hover:text-white inline-block">
             Contact US
           </button>
         </Link>
