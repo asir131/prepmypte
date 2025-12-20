@@ -128,7 +128,7 @@ export default function ChoosePlan() {
   const gradientClass = "bg-gradient-to-r from-[#A52B1A]  to-[#EF5634]";
 
   return (
-    <div className="min-h-screen lg:mx-20 px-6 py-12 lg:px-12">
+    <div className="min-h-screen lg:mx-20 px-6 py-15 lg:px-12">
       {/* Header Section */}
       <div className="mb-12 flex flex-col justify-between gap-8 lg:flex-row lg:items-start">
         <div className="flex-1">

@@ -65,10 +65,10 @@ export function PracticeDetails({ activeCardId }: PracticeDetailsProps) {
   if (!detail) return null;
 
   return (
-    <div className="lg:w-6xl lg:h-72 p-8 rounded-2xl bg-white border border-[#E5E7EB] mt-12 flex flex-col lg:flex-row gap-8 lg:gap-12">
+    <div className="lg:w-6xl lg:h-72 p-5 rounded-2xl bg-white border border-[#E5E7EB] mt-12 flex flex-col lg:flex-row gap-8 lg:gap-12">
       {/* Left side - Number and Label */}
       <div className="flex flex-col items-center justify-center lg:w-1/3">
-        <div className="text-6xl font-bold text-[#7D0000]">{detail.count}</div>
+        <div className="md:text-6xl text-4xl font-bold text-[#7D0000]">{detail.count}</div>
         <div className="text-xl font-semibold text-gray-800 mt-4">
           {detail.label}
         </div>
@@ -77,7 +77,7 @@ export function PracticeDetails({ activeCardId }: PracticeDetailsProps) {
 
       {/* Right side - Title and Description */}
       <div className="lg:w-2/3">
-        <h2 className="text-4xl font-bold text-[#7D0000] mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#7D0000] mb-6">
           {detail.title}
         </h2>
         <ul className="space-y-4">
