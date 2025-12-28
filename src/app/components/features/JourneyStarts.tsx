@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const JourneyStarts = () => {
@@ -99,9 +100,11 @@ const JourneyStarts = () => {
       </div>
 
       <div>
-        <button className="bg-[#DE3B40] text-white px-16 py-2 rounded-full mt-10 mb-10">
-          Sign Up
-        </button>
+        <Link href={"/sign-up"}>
+          <button className="cursor-pointer px-16 py-3 rounded-lg text-white bg-gradient-to-b from-[#EF5634] to-[#5A0000] hover:from-[#5A0000] hover:to-[#5A0000]  text-center transition-all duration-500 ease-in-out hover:text-white inline-block">
+            Sign Up
+          </button>
+        </Link>
       </div>
     </div>
   );

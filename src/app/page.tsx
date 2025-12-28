@@ -13,11 +13,11 @@ import CoachingPlan from "./components/pricing/CoachingPlan";
 export default function Home() {
   return (
     <div className="w-full overflow-hidden">
-      <div className="w-full min-h-screen grid items-center justify-center   ">
+      <div className="  ">
         <Hero />
       </div>
       <WelcomePrepMyPTE />
-      <div className="md:mb-30 md:mt-45 xl:mb-30 xl:mt-50">
+      <div className="md:mb-30  md:mt-45 xl:mb-15 xl:mt-35">
         <ChoosePrep />
       </div>
       <PracticeOverview />

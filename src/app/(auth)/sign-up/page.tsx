@@ -13,7 +13,7 @@ const Page: React.FC = () => {
 
   return (
     <div className="lg:flex justify-around md:mt-20 px-5 py-10 md:px-0 md:py-0 mb-20">
-      <div>
+      <div className="hidden lg:block">
         <h1 className="font-bold text-2xl md:text-[48px]">PrepMyPTE</h1>
         <h1 className="font-bold  md:text-[30px] mt-8">
           Your Complete{" "}
@@ -33,7 +33,7 @@ const Page: React.FC = () => {
           />
         </div>
       </div>
-      <div className="md:border-l border-[#7D0000] md:pl-20 mt-10 md:mt-0">
+      <div className="md:border-l border-[#7D0000] md:pl-20 mt-0 md:mt-0">
         <h1 className="font-bold text-[30px] text-[#781216]">Welcome back !</h1>
         <p className="text-[16px]">
           Please enter your email and password to continue.

@@ -2,6 +2,7 @@ import React from "react";
 import right from "@public/history/right.png";
 import left from "@public/history/left.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const History = () => {
   const circle = (
@@ -80,9 +81,7 @@ const History = () => {
               </h1>
               <p className="text-[14px] text-start lg:text-[16px] leading-relaxed">
                 The journey began with the creation of{" "}
-                <span className="text-[#379AE6]  border-b border-[#379AE6]">
-                  PrepMonTCFCA
-                </span>
+                <Link href="https://prepmontcfca.com/" className="text-[#379AE6]  border-b border-[#379AE6] ">PrepMonTCFCA</Link>
                 , helping thousands of French speakers prepare efficiently for
                 the TCF Canada exam.
               </p>
