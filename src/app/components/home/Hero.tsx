@@ -1,10 +1,21 @@
-
 import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
   return (
     <section className="lg:mr-50 lg:ml-50 md:mr-10 md:ml-10 mt-0 md:mt-20">
+      <div className="flex flex-col justify-center items-center gap-2 md:gap-5 mb-8 md:-mt-10">
+        <h1 className="text-[#8a0808] font-bold text-2xl lg:text-5xl text-center">
+          Your PTE Success Starts Here
+        </h1>
+        <h1 className="font-bold lg:text-3xl text-center">
+          Smart practice powered by AI!
+        </h1>
+        <h1 className="font-semibold text-xs md:text-xl text-center">
+          Realistic mock tests, and instant feedback to improve faster and score
+          higher.
+        </h1>
+      </div>
       <div
         className="mx-auto relative   rounded-3xl   md:py-0"
         style={{

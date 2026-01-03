@@ -55,10 +55,18 @@ const Footer = () => {
         </div>
         <div className="lg:mt-15 mt-5 pl-10 lg:pl-0 leading-10 gap-1 flex flex-col">
           <p className="font-bold text-[20px]">Pearson PTE</p>
-          <Link href="https://www.pearsonpte.com/about-us">About Pearson PTE</Link>
-          <Link href="https://www.pearsonpte.com/">Pearson Official Website</Link>
-          <Link href="https://www.pearsonpte.com/preparation">Pearson Official Tests</Link>
-          <Link href="https://www.pearsonpte.com/test-centers-and-fees">Pearson PTE Test Centers & Fees</Link>
+          <Link href="https://www.pearsonpte.com/about-us">
+            About Pearson PTE
+          </Link>
+          <Link href="https://www.pearsonpte.com/">
+            Pearson Official Website
+          </Link>
+          <Link href="https://www.pearsonpte.com/preparation">
+            Pearson Official Tests
+          </Link>
+          <Link href="https://www.pearsonpte.com/test-centers-and-fees">
+            Pearson PTE Test Centers & Fees
+          </Link>
         </div>
         <div className="lg:mt-15 pl-10 mt-5 md:mt-0 lg:pl-0 leading-10  flex flex-col">
           <p className="font-bold text-[20px]">Product</p>
@@ -75,12 +83,13 @@ const Footer = () => {
         <div className="lg:mt-15 pl-10 md:mt-0 mt-5 lg:pl-0 leading-10 flex flex-col">
           <p className="font-bold text-[20px]">Support</p>
           <Link href="contact-us">Contact us</Link>
-          <Link href="https://chat.whatsapp.com/IrvVHJdEdpF8rLP4Krf51P">Chat support</Link>
-
+          <Link href="https://chat.whatsapp.com/IrvVHJdEdpF8rLP4Krf51P">
+            Chat support
+          </Link>
         </div>
       </div>
       <div className="border-t border-white mx-10 flex justify-end lg:gap-170 pt-10 items-center">
-        <p>© 2025 Prep My PTE . All rights reserved .</p>
+        <p>© 2026 Prep My PTE . All rights reserved .</p>
         {/* <div className="flex gap-3">
           <span>
             <svg

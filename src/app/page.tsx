@@ -25,7 +25,7 @@ export default function Home() {
       <WhereverUare />
       <UsersSaying />
       <ChoosePlan />
-      <CoachingPlan/>
+      <CoachingPlan />
       <ExtraGuidance />
     </div>
   );

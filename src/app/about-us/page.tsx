@@ -9,9 +9,11 @@ const page = () => {
     <div className="flex flex-col items-center justify-center gap-20">
       <AboutUs />
       <OurVision />
-      <History />
+      <div className="lg:mb-20">
+        <History />
+      </div>
 
-      <div className="min-h-screen flex items-center justify-center lg:p-30 p-6">
+      <div className=" flex items-center justify-center pb-30 p-6 lg:-mt-30 ">
         <div className="lg:flex gap-8 lg:gap-30 max-w-6xl items-center justify-between bg-linear-to-r from-[#A52B1A] to-[#EF5634] text-white rounded-2xl w-full">
           {/* Text Content */}
           <div className="lg:pl-6 p-6 lg:p-0 lg:w-1/2">
