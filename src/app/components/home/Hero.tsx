@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import { IoSearchSharp } from "react-icons/io5";
 
 const Hero = () => {
   return (
     <section className="lg:mr-50 lg:ml-50 md:mr-10 md:ml-10 mt-0 md:mt-20">
       <div className="flex flex-col justify-center items-center gap-2 md:gap-5 mb-8 md:-mt-10">
-        <h1 className="text-[#8a0808] font-bold text-2xl lg:text-5xl text-center">
+        <h1 className="text-[#8a0808] font-bold text-2xl lg:text-6xl text-center">
           Your PTE Success Starts Here
         </h1>
         <h1 className="font-bold lg:text-3xl text-center">
@@ -24,9 +26,9 @@ const Hero = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="grid md:items-center lg:items-center grid-cols-1 lg:grid-cols-2 md:grid-cols-1">
+        <div className="grid grid-cols-1 md:grid-cols-1 md:items-center lg:grid-cols-[0.7fr_1.4fr] lg:items-center gap-10 md:gap-12 lg:gap-0">
           {/* IMAGE */}
-          <div className="md:hidden lg:flex hidden justify-center lg:justify-start">
+          <div className="md:hidden  lg:flex hidden justify-center lg:justify-start">
             <Image
               src="/hero/girl.png"
               alt="Student"
@@ -45,30 +47,34 @@ const Hero = () => {
           </div>
 
           {/* CONTENT */}
-          <div className="text-center lg:text-left text-white p-5">
-            <h1 className="text-3xl pt-20 md:pt-20 lg:pt-0 font-extrabold leading-tight sm:text-3xl md:text-4xl lg:text-6xl">
-              Excel in Your PTE Exam <br />
-              <span className="text-white/90">with Advanced AI Scoring</span>
+          <div className="text-center grid gap-6 md:gap-10 lg:text-left text-white p-5 md:p-8 lg:p-5">
+            <h1 className="text-3xl pt-16 md:pt-20 lg:pt-0 font-bold text-center leading-tight sm:text-3xl md:text-3xl xl:text-6xl">
+              Get Ready for the PTE Core Exam
             </h1>
 
-            <p className="mt-7 md:mt-7 lg:mt-4 text-sm sm:text-sm md:text-base lg:text-lg text-white/90">
-              Boost your performance with real-time feedback and realistic mock
-              tests, and maximize your results.
+            <p className="mt-5 md:mt-7 lg:mt-4 text-sm sm:text-sm md:text-lg lg:text-2xl text-center text-white/90">
+              A complete platform to practice, improve , and <br /> succeed with
+              confidence
             </p>
 
-            <div className="mt-10 lg:mb-0 md:mb-10 mb-20 md:mt-10 flex flex-col gap-4 md:gap-8 sm:flex-row sm:justify-center lg:justify-start">
+            <div className="mt-8 lg:mb-0 md:mb-10 mb-16 md:mt-10 flex flex-col gap-4 md:gap-8 sm:flex-row sm:justify-center lg:justify-center">
               <Link
                 href="/pricing"
-                className="cursor-pointer px-16 py-3 rounded-lg text-white bg-gradient-to-b from-[#EF5634] to-[#5A0000] hover:from-[#5A0000] hover:to-[#5A0000]  text-center transition-all duration-500 ease-in-out hover:text-white inline-block"
+                className="cursor-pointer md:text-xl px-16 py-5 rounded-lg  bg-white text-black  text-center transition-all duration-500 ease-in-out  inline-block"
               >
-                Get Started Today
+                <span className="flex items-center justify-center gap-5">
+                  Get Started Today{" "}
+                  <FaRegArrowAltCircleRight className="mt-1" />
+                </span>
               </Link>
 
               <Link
                 href="/features"
-                className="cursor-pointer px-16 py-3 rounded-lg text-white bg-gradient-to-b from-[#EF5634] to-[#5A0000] hover:from-[#5A0000] hover:to-[#5A0000]  text-center transition-all duration-500 ease-in-out hover:text-white inline-block"
+                className="cursor-pointer md:text-xl px-16 py-5 rounded-lg text-white bg-gradient-to-b from-[#EF5634] to-[#5A0000] hover:from-[#5A0000] hover:to-[#5A0000]  text-center transition-all duration-500 ease-in-out hover:text-white inline-block"
               >
-                Explore Features
+                <span className="flex items-center justify-center gap-5">
+                  Explore Features <IoSearchSharp className="mt-1" />
+                </span>
               </Link>
             </div>
           </div>

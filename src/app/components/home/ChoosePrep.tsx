@@ -194,7 +194,7 @@ const ChoosePrep = () => {
           Why Choose <span className="text-[#DE3B40]">PrepMyPTE</span> ?
         </h1>
 
-        <div className="mx-5 lg:mx-auto lg:max-w-7xl mt-30 ">
+        <div className="mx-5 lg:mx-auto lg:max-w-7xl mt-16 ">
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
             {features.map((feature, index) => (

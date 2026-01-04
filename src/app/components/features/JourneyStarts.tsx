@@ -3,7 +3,7 @@ import React from "react";
 
 const JourneyStarts = () => {
   return (
-    <div className="bg-[#F3F4F6] w-full flex flex-col items-center justify-center md:p-20">
+    <div className="bg-[#F3F4F6] w-full flex flex-col items-center justify-center py-5 md:p-20  -mb-5">
       <div>
         <h1 className="font-bold text-2xl text-[30px] text-center">
           Your journey <span className="text-[#DE3B40]">starts here</span>
@@ -99,7 +99,7 @@ const JourneyStarts = () => {
         </div>
       </div>
 
-      <div>
+      <div className="mt-5">
         <Link href={"/sign-up"}>
           <button className="cursor-pointer px-16 py-3 rounded-lg text-white bg-gradient-to-b from-[#EF5634] to-[#5A0000] hover:from-[#5A0000] hover:to-[#5A0000]  text-center transition-all duration-500 ease-in-out hover:text-white inline-block">
             Sign Up

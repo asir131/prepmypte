@@ -9,7 +9,7 @@ const WelcomePrepMyPTE = () => {
         <h1 className="font-bold text-2xl mt-7 md:mt-0 lg:text-[48px] mb-5">
           Welcome to <span className="text-[#DE3B40]">Prep My PTE</span>
         </h1>
-        <p className="lg:w-100 text-sm md:text-lg text-justify md:text-start mt-5 md:mt-0">
+        <p className="lg:w-120 text-sm  md:text-lg text-justify  mt-5 md:mt-0">
           Get ready to achieve your dream PTE Core score for Canadian
           immigration. PrepMyPTE offers AI-powered practice tests, instant
           scoring, and expert feedback to help you improve faster. Boost your
