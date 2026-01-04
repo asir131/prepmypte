@@ -60,7 +60,7 @@ const Hero = () => {
             <div className="mt-8 lg:mb-0 md:mb-10 mb-16 md:mt-10 flex flex-col gap-4 md:gap-8 sm:flex-row sm:justify-center lg:justify-center">
               <Link
                 href="/pricing"
-                className="cursor-pointer md:text-xl px-16 py-5 rounded-lg  bg-white text-black  text-center transition-all duration-500 ease-in-out  inline-block"
+                className="cursor-pointer md:text-xl px-16 py-5 rounded-lg  bg-white hover:bg-transparent hover:border border-white hover:text-white text-black  text-center transition-all duration-500 ease-in-out  inline-block"
               >
                 <span className="flex items-center justify-center gap-5">
                   Get Started Today{" "}
@@ -70,7 +70,7 @@ const Hero = () => {
 
               <Link
                 href="/features"
-                className="cursor-pointer md:text-xl px-16 py-5 rounded-lg text-white bg-gradient-to-b from-[#EF5634] to-[#5A0000] hover:from-[#5A0000] hover:to-[#5A0000]  text-center transition-all duration-500 ease-in-out hover:text-white inline-block"
+                className="cursor-pointer md:text-xl px-16 py-5 rounded-lg text-white border hover:bg-white hover:text-black border-white  text-center transition-all duration-500 ease-in-out  inline-block"
               >
                 <span className="flex items-center justify-center gap-5">
                   Explore Features <IoSearchSharp className="mt-1" />
