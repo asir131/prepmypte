@@ -59,7 +59,7 @@ const NavBar = () => {
         <TextAlignJustify />
       </div>
 
-      <div className="p-px hidden lg:block bg-linear-to-r from-[#5A0000] to-[#EF5634] rounded-lg">
+      <div className="p-px hidden lg:block bg-linear-to-r from-[#5A0000] to-[#EF5634] rounded-lg shadow-[0_10px_20px_-12px_rgba(0,0,0,0.60)]">
         <div className="flex gap-10 items-center bg-white p-4 rounded-lg px-10">
           <div className="flex gap-10 items-center">
             {items.map((item, index) => (
@@ -79,7 +79,7 @@ const NavBar = () => {
           <div className="flex items-center justify-center gap-4">
             <Link
               href="/sign-up"
-              className="cursor-pointer bg-linear-to-r from-[#EF5634] to-[#5A0000] text-white px-8 py-2 rounded-lg"
+              className="cursor-pointer bg-linear-to-r from-[#EF5634] to-[#5A0000] text-white px-8 py-2 rounded-lg "
             >
               Sign up
             </Link>
@@ -141,7 +141,7 @@ const NavBar = () => {
           <div className="flex flex-col gap-4 mt-8">
             <Link
               href="/sign-up"
-              className="cursor-pointer bg-linear-to-r from-[#EF5634] to-[#5A0000] text-white px-6 py-3 rounded-lg text-center transition-transform duration-200 hover:scale-105"
+              className="cursor-pointer  bg-linear-to-r from-[#EF5634] to-[#5A0000] text-white px-6 py-3 rounded-lg text-center transition-transform duration-200 hover:scale-105"
               onClick={() => setOpenMenu(false)}
             >
               Sign up
